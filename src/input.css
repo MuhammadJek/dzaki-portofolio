@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Hubot+Sans:ital,wght@0,200..900;1,200..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-work: "Work Sans", sans-serif;
+}
+/* body {
+  font-family: "Work Sans", sans-serif;
+} */
+
+.hamburger-line {
+  @apply w-[30px] h-[1px] my-2 block bg-black;
+}
+
+.hamburger-active > span:nth-child(1) {
+  @apply rotate-39;
+}
+.hamburger-active > span:nth-child(2) {
+  @apply scale-0;
+}
+.hamburger-active > span:nth-child(3) {
+  @apply origin-bottom-left -rotate-39;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  /* width: 100%;
+  height: 100%;
+  object-fit: cover; */
+}
+.item .activeIcon {
+  @apply hidden;
+}
+.item.active .inactiveIcon {
+  @apply hidden;
+}
+
+.item.active .activeIcon {
+  @apply block;
+}
+
+.item:not(.active) .content {
+  @apply h-0 overflow-hidden py-0;
+}
+
+.item .content {
+  @apply p-8 h-auto;
+}
