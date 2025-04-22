@@ -8,6 +8,11 @@
   font-family: "Work Sans", sans-serif;
 } */
 
+body[data-aos-duration="4000"] [data-aos],
+[data-aos][data-aos][data-aos-duration="4000"] {
+  transition-duration: 4000ms;
+}
+
 .hamburger-line {
   @apply w-[30px] h-[1px] my-2 block bg-black;
 }
