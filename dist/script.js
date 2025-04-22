@@ -69,4 +69,8 @@ var swiper = new Swiper(".mySwiper", {
     el: ".swiper-scrollbar",
     hide: true,
   },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
 });
